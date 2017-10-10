@@ -12,8 +12,8 @@ public class Main {
         String name = nameInput.nextLine();
 
         int num = (int)(Math.random()*10);
-        int luckynum= (int)Math.pow(num, 2);
-        System.out.println("Hey " + name + "! Your lucky number is " + luckynum);
+        int luckynum = (int)Math.pow(num, 2);
+        System.out.println("Hey " + name + "! Your lucky number is " + luckynum + ", " + num);
 
     }
 }
