@@ -10,9 +10,14 @@ public class Main {
         Scanner nameInput = new Scanner (System.in);
         System.out.println("Hi! What's your name?");
         String name = nameInput.nextLine();
+        int luckynum;
 
         int num = (int)(Math.random()*10);
-        int luckynum = (int)Math.pow(num, 2);
+        if (num == 0) {
+            luckynum = (int)(Math.pow(10, 2));
+        } else {
+            luckynum = (int) Math.pow(num, 2);
+        }
         System.out.println("Hey " + name + "! Your lucky number is " + luckynum);
 
         int randNum = (int)(Math.random()*5);
